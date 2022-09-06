@@ -7,9 +7,9 @@
     min-height: 581px;
     width: 528px;
     padding: 40px;
-    background-color: var(--primary-bg-color);
-    box-shadow: var(--card-shadow);
-    transition: transform 250ms var(--timing-function);
+    background-color: $primary-bg-color;
+    box-shadow: $card-shadow;
+    transition: transform 250ms $timing-function;
 }
 
 .modal-button-close {
@@ -25,9 +25,9 @@
     border-radius: 50%;
     margin-left: auto;
     cursor: pointer;
-    background-color: var(--primary-white-color);
-    transition: fill 250ms var(--timing-function),
-        border-color 250ms var(--timing-function);
+    background-color: $primary-white-color;
+    transition: fill 250ms $timing-function,
+        border-color 250ms $timing-function;
 }
 
 .modal-button-close:hover {
