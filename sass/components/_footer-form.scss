@@ -1,0 +1,84 @@
+.footer-form {
+    margin-left: auto;
+}
+
+.footer-form-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.footer-form-group {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.footer-form-lable {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--adress-text-color);
+    transition: transform 250ms var(--timing-function);
+}
+
+.footer-form-input {
+    border: 1px solid var(--border-footer-form-color);
+    border-radius: 4px;
+    width: 358px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--primary-white-color);
+}
+
+.footer-form-input:focus+.footer-form-lable,
+.footer-form-input:not(:placeholder-shown)+.footer-form-lable {
+    transform: translateY(-235%);
+}
+
+.footer-button {
+    display: flex;
+    border-radius: 4px;
+    width: 200px;
+    padding: 10px 28px;
+    color: var(--primary-white-color);
+    background-color: var(--button-bg-color);
+    border: 1px solid transparent;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    box-shadow: var(--button-modal-shadow);
+    transition: background-color 250ms var(--timing-function),
+        color 250ms var(--timing-function);
+}
+
+.footer-button-icon {
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+    transition: fill 250ms var(--timing-function);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+    background-color: var(--primary-bg-color);
+    color: var(--title-text-color);
+}
+
+.footer-button:hover .footer-button-icon,
+.footer-button:focus .footer-button-icon {
+    fill: var(--title-text-color);
+}

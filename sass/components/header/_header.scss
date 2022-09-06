@@ -1,0 +1,22 @@
+.header {
+    border-bottom: 1px solid var(--outline-color);
+}
+.header__container {
+    @extend %container;
+    display:flex;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $accent-text-color;
+}
+
+.header__logo-studio {
+    color: $primary-black-color;
+}
