@@ -25,12 +25,7 @@
   display: block;
   position: relative;
   color: $accent-text-color;
-  &:hover,
-  &:focus {
-    color: $primary-text-color;
-  }
-}
-.site-nav__link-current::after {
+  &::after {
   content: "";
   position: absolute;
   left: 0;
@@ -44,6 +39,12 @@
   transform: scaleX(100%);
   transition: opacity 250ms $timing-function, transform 250ms $timing-function;
 }
+  &:hover,
+  &:focus {
+    color: $primary-text-color;
+  }
+}
+
 .site-nav__link-current:hover::after,
 .site-nav__link-current:focus::after {
   opacity: 0;
