@@ -1,5 +1,5 @@
 .header {
-    border-bottom: 1px solid var(--outline-color);
+    border-bottom: 1px solid $outline-color;
 }
 .header__container {
     @extend %container;

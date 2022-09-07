@@ -51,7 +51,7 @@
   min-height: 120px;
   padding: 12px 16px;
   resize: none;
-  transition: border-color 250ms var(--timing-function);
+  transition: border-color 250ms $timing-function;
   &:focus-visible {
     outline: none;
   }
